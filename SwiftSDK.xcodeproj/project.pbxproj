@@ -11,6 +11,8 @@
 		5C765AE3199A6DAA003D9110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C765AE2199A6DAA003D9110 /* ViewController.swift */; };
 		5C765AE8199A6DAA003D9110 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C765AE7199A6DAA003D9110 /* Images.xcassets */; };
 		6B76EA9D19DB0BE600E49C70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C765AE4199A6DAA003D9110 /* Main.storyboard */; };
+		FAFE43B31B4B61000015570E /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFE43B11B4B61000015570E /* Starscream.framework */; };
+		FAFE43B41B4B61000015570E /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFE43B21B4B61000015570E /* Starscream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,10 @@
 		5C765AE2199A6DAA003D9110 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C765AE5199A6DAA003D9110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C765AE7199A6DAA003D9110 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAFE43AC1B4B608E0015570E /* Starscream */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Starscream; path = third_party/Starscream; sourceTree = "<group>"; };
+		FAFE43AF1B4B60F10015570E /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = "third_party/Starscream/build/Debug-iphoneos/Starscream.framework"; sourceTree = "<group>"; };
+		FAFE43B11B4B61000015570E /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = "third_party/Starscream/build/Debug-iphoneos/Starscream.framework"; sourceTree = "<group>"; };
+		FAFE43B21B4B61000015570E /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = third_party/Starscream/build/Debug/Starscream.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFE43B31B4B61000015570E /* Starscream.framework in Frameworks */,
+				FAFE43B41B4B61000015570E /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +57,10 @@
 		5C765AD2199A6DAA003D9110 = {
 			isa = PBXGroup;
 			children = (
+				FAFE43B11B4B61000015570E /* Starscream.framework */,
+				FAFE43B21B4B61000015570E /* Starscream.framework */,
+				FAFE43AF1B4B60F10015570E /* Starscream.framework */,
+				FAFE43AC1B4B608E0015570E /* Starscream */,
 				5C765ADD199A6DAA003D9110 /* SwiftSDK */,
 				5C765ADC199A6DAA003D9110 /* Products */,
 			);
@@ -258,6 +270,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alex/Downloads,
+					"$(PROJECT_DIR)/third_party/Starscream/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/third_party/Starscream/build/Debug",
+				);
 				INFOPLIST_FILE = SimpleTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SwiftSDK;
@@ -270,6 +288,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alex/Downloads,
+					"$(PROJECT_DIR)/third_party/Starscream/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/third_party/Starscream/build/Debug",
+				);
 				INFOPLIST_FILE = SimpleTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SwiftSDK;
